@@ -97,21 +97,20 @@ function Presentation() {
 
       <div className="absolute inset-0 pt-12">
         <div className="relative w-full h-full">
-          <AnimatePresence mode="wait" initial={false} custom={direction}>
+          <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={current.id}
-              custom={direction}
-              initial={(d: "h" | "v") => ({
+              initial={{
                 opacity: 0,
-                x: d === "h" ? 80 : 0,
-                y: d === "v" ? 80 : 0,
-              })}
+                x: direction === "h" ? 80 : 0,
+                y: direction === "v" ? 80 : 0,
+              }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              exit={(d: "h" | "v") => ({
+              exit={{
                 opacity: 0,
-                x: d === "h" ? -80 : 0,
-                y: d === "v" ? -80 : 0,
-              })}
+                x: direction === "h" ? -80 : 0,
+                y: direction === "v" ? -80 : 0,
+              }}
               transition={{ duration: 0.45, ease: [0.4, 0, 0.2, 1] }}
               className="absolute inset-0"
             >
