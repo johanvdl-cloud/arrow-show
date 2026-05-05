@@ -2,21 +2,34 @@ import { motion } from "framer-motion";
 import SlideLayout from "@/components/SlideLayout";
 
 const resources = [
-  { name: "The Operating System", v: "high", r: "high", i: "med", s: "high",
+  { name: "The Operating System", v: 95, r: 90, i: 70, s: 85,
     desc: "Session C, CEC cadence, Work-Out, Best Practices, integration playbook — a reproducible way of running businesses." },
-  { name: "Crotonville & Talent Engine", v: "high", r: "high", i: "med", s: "high",
+  { name: "Crotonville & Talent Engine", v: 90, r: 85, i: 65, s: 85,
     desc: "10–12 hr reviews of 3,000 executives annually. $45M invested in the 1980s. A leadership factory." },
-  { name: "GE Capital", v: "high", r: "med", i: "med", s: "med",
+  { name: "GE Capital", v: 90, r: 60, i: 55, s: 60,
     desc: "Internal capital market at vast scale; recycles industrial cash into leasing, reinsurance, private equity." },
-  { name: "Six Sigma Discipline", v: "high", r: "high", i: "low", s: "med",
+  { name: "Six Sigma Discipline", v: 85, r: 80, i: 35, s: 55,
     desc: "Quality as DNA. 40% of bonus tied to Six Sigma objectives. Imitable in form, hard to copy in depth." },
-  { name: "GE Brand & Reputation", v: "med", r: "high", i: "med", s: "high",
+  { name: "GE Brand & Reputation", v: 65, r: 85, i: 60, s: 80,
     desc: "Supports access to capital and talent; not the primary driver of value creation." },
 ];
 
-const dot = (level: string) => {
-  const map: Record<string, string> = { high: "bg-ge-blue", med: "bg-ge-blue/50", low: "bg-ge-rule" };
-  return <span className={`inline-block w-3 h-3 rounded-full ${map[level]}`} />;
+const Score = ({ value, active, delay }: { value: number; active: boolean; delay: number }) => {
+  const intensity = value / 100;
+  return (
+    <div className="flex flex-col items-center gap-1.5 w-full">
+      <div className="relative w-full h-1.5 rounded-full bg-ge-rule overflow-hidden">
+        <motion.div
+          initial={{ width: 0 }}
+          animate={active ? { width: `${value}%` } : { width: 0 }}
+          transition={{ duration: 0.9, delay, ease: "easeOut" }}
+          className="h-full rounded-full bg-ge-blue"
+          style={{ opacity: 0.5 + intensity * 0.5 }}
+        />
+      </div>
+      <span className="text-[13px] font-medium tabular-nums text-ge-ink">{value}%</span>
+    </div>
+  );
 };
 
 export default function SlideVRIS({ active }: { active: boolean }) {
