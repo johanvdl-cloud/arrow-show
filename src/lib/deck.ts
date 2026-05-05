@@ -6,6 +6,7 @@ import SlideEvidence from "@/components/slides/SlideEvidence";
 import SlideVRIS from "@/components/slides/SlideVRIS";
 import SlideRelatedness from "@/components/slides/SlideRelatedness";
 import SlideMotives from "@/components/slides/SlideMotives";
+import SlideSources from "@/components/slides/SlideSources";
 import SlideOI from "@/components/slides/SlideOI";
 import SlideFits from "@/components/slides/SlideFits";
 import SlideRisks from "@/components/slides/SlideRisks";
@@ -35,6 +36,7 @@ export const SLIDES: SlideDef[] = [
   { id: "evidence", title: "Evidence of Value Creation", section: "evidence", Component: SlideEvidence },
   { id: "vris", title: "Strategic Resources (VRIS)", section: "evidence", Component: SlideVRIS },
   { id: "relatedness", title: "Resource Relatedness", section: "evidence", Component: SlideRelatedness },
+  { id: "sources", title: "Four Sources of Diversification Value", section: "diagnosis", Component: SlideSources },
   { id: "motives", title: "Motives for Diversification", section: "diagnosis", Component: SlideMotives },
   { id: "oi", title: "Organizational Infrastructure", section: "diagnosis", Component: SlideOI },
   { id: "fits", title: "Three Fits Synthesis", section: "diagnosis", Component: SlideFits },
