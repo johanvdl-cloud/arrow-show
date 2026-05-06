@@ -116,6 +116,12 @@ function Presentation() {
             >
               <ScaledSlide>
                 <Comp active={true} />
+                <div className="absolute bottom-6 right-10 z-20 flex items-baseline gap-2 px-4 py-2 rounded-full bg-black/35 backdrop-blur text-ge-paper pointer-events-none">
+                  <span className="text-[28px] font-light leading-none tabular-nums" style={{ fontFamily: "Georgia, serif" }}>
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-[14px] opacity-60 tabular-nums">/ {String(SLIDES.length).padStart(2, "0")}</span>
+                </div>
               </ScaledSlide>
             </motion.div>
           </AnimatePresence>
