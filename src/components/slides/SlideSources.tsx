@@ -34,11 +34,11 @@ export default function SlideSources({ active }: { active: boolean }) {
       footerLeft="Source: Castañer, First Session — Master HEC Lausanne, W/S 2026 (p.9)"
       footerRight="Prof. X. Castañer · 2026"
     >
-      <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">Theory Framework</div>
+      <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">4 · Theory Frame — Sources of Diversification Value</div>
       <h2 className="text-[44px] font-light mb-3" style={{ fontFamily: "Georgia, serif" }}>
-        Four Potential Sources of Diversification Value
+        The four lenses through which any conglomerate must justify itself
       </h2>
-      <p className="text-[16px] text-ge-muted mb-8 italic">The lens we then apply to GE on the next slide.</p>
+      <p className="text-[16px] text-ge-muted mb-8 italic">Theory only on this slide — the next slide scores GE against each lens.</p>
 
       <div className="grid grid-cols-2 gap-6 flex-1">
         {sources.map((s, i) => (

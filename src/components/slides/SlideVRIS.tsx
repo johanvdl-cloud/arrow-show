@@ -41,7 +41,10 @@ export default function SlideVRIS({ active }: { active: boolean }) {
       </h2>
 
       <div className="grid grid-cols-[1fr_repeat(4,110px)] gap-x-6 gap-y-3 items-center text-[12px] tracking-widest uppercase text-ge-muted border-b border-ge-rule pb-3">
-        <div>Resource</div><div className="text-center">Valuable</div><div className="text-center">Rare</div><div className="text-center">Inimitable</div><div className="text-center">Substitutable</div>
+        <div>Resource</div><div className="text-center">Valuable</div><div className="text-center">Rare</div><div className="text-center">Inimitable</div><div className="text-center">Hard to Substitute</div>
+      </div>
+      <div className="text-[11px] text-ge-muted italic mt-2 mb-1">
+        Higher score = more favourable. Reading: a resource is strategic where it scores high on all four dimensions.
       </div>
 
       <div className="flex-1 mt-4 space-y-1">

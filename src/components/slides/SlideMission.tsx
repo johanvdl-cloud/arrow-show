@@ -51,7 +51,7 @@ export default function SlideMission({ active }: { active: boolean }) {
         </div>
       </div>
 
-      <div className="text-[12px] tracking-[0.25em] uppercase text-ge-muted mb-4">Goals — operationalised across four levers</div>
+      <div className="text-[12px] tracking-[0.25em] uppercase text-ge-muted mb-4">Strategic priorities — how the goals are pursued</div>
 
       <div className="space-y-5 flex-1">
         {rows.map((r, i) => (

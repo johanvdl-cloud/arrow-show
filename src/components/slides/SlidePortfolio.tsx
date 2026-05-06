@@ -2,9 +2,12 @@ import { motion } from "framer-motion";
 import SlideLayout from "@/components/SlideLayout";
 import { useCountUp } from "@/hooks/useCountUp";
 
+// Portfolio at the end of the case (2001). GE Aerospace was divested to Martin
+// Marietta in November 1992, so it is not shown here. Aviation-related activity
+// post-1992 is captured under Aircraft Engines.
 const groups = [
   { name: "Infrastructure", items: ["Aircraft Engines", "Power Systems", "Transportation"] },
-  { name: "Technology", items: ["Medical Systems", "Aerospace", "Plastics", "Industrial"] },
+  { name: "Technology", items: ["Medical Systems", "Plastics", "Industrial Systems"] },
   { name: "Consumer & Media", items: ["Appliances", "NBC Broadcasting", "Motors", "Lighting"] },
   { name: "Capital", items: ["GE Capital (financing, leasing, insurance, investment banking)"] },
 ];
@@ -20,7 +23,7 @@ export default function SlidePortfolio({ active }: { active: boolean }) {
     <SlideLayout footerLeft="Source: Case Exhibits 1–9, GE Annual Reports" footerRight="Prof. X. Castañer · 2026">
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">1 · Businesses — Portfolio & Scope</div>
       <h2 className="text-[40px] font-light mb-10" style={{ fontFamily: "Georgia, serif" }}>
-        A portfolio of twelve unrelated businesses — held together by how they are run
+        A portfolio of eleven largely unrelated businesses — held together by how they are run
       </h2>
 
       <div className="grid grid-cols-4 gap-6 mb-10">
@@ -48,10 +51,10 @@ export default function SlidePortfolio({ active }: { active: boolean }) {
         <div>
           <div className="text-[12px] tracking-widest uppercase text-ge-muted mb-3">The Portfolio Question</div>
           <p className="text-[18px] leading-relaxed">
-            A diversified chop-shop valuation would treat each of these twelve units as a standalone pure-play.
+            A chop-shop valuation would treat each of these eleven units as a standalone pure-play.
             The question is whether holding them inside one corporate entity generates more value than their sum
             would command on public markets. For GE, customers, channels and technologies barely overlap — so
-            classical scope economies cannot be the answer.
+            classical scope economies cannot be the answer. The next slides test what can.
           </p>
         </div>
         <div>

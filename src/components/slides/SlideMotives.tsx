@@ -15,9 +15,9 @@ const motives = [
 export default function SlideMotives({ active }: { active: boolean }) {
   return (
     <SlideLayout footerLeft="Framework: Castañer — four sources of diversification value" footerRight="Prof. X. Castañer · 2026">
-      <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">4 · Motives for Diversification</div>
+      <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">4 · Motives — GE scored against the four sources</div>
       <h2 className="text-[40px] font-light mb-8" style={{ fontFamily: "Georgia, serif" }}>
-        Where the 'whole &gt; parts' value actually comes from
+        Where the 'whole &gt; parts' value actually comes from at GE
       </h2>
 
       <div className="grid grid-cols-2 gap-6 flex-1">
