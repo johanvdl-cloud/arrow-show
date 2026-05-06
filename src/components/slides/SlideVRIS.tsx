@@ -25,12 +25,12 @@ const resources: Resource[] = [
   },
   {
     name: "GE Capital",
-    why: "Tested directly against Castañer's Source II (financial synergies). Recycles industrial cash flows into leasing, reinsurance and private equity at a scale stand-alone industrials cannot match.",
+    why: "The clearest source of financial synergy in the portfolio. Recycles industrial cash flows into leasing, reinsurance and private equity at a scale stand-alone industrials cannot match.",
     v: "High", r: "Medium", i: "Medium", s: "Medium",
   },
   {
     name: "Six Sigma discipline",
-    why: "Tested against the learning-and-adaptation lens. Deployed across all units; 40% of bonus tied to it; case reports $750M return on $500M invested by 1999.",
+    why: "A candidate learning-and-adaptation resource. Deployed across all units; 40% of bonus tied to it; case reports $750M return on $500M invested by 1999.",
     v: "High", r: "Medium", i: "Low", s: "Low",
   },
   {
@@ -61,7 +61,7 @@ const Cell = ({ tier, active, delay }: { tier: Tier; active: boolean; delay: num
 export default function SlideVRIS({ active }: { active: boolean }) {
   return (
     <SlideLayout
-      footerLeft="Framework: Barney (1991) — VRIS, applied per Castañer (First Session, slide 13)"
+      footerLeft="Framework: VRIS — Barney (1991)"
       footerRight="Prof. X. Castañer · 2026"
     >
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">

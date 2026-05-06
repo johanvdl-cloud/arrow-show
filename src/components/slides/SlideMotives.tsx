@@ -14,7 +14,7 @@ const motives = [
 
 export default function SlideMotives({ active }: { active: boolean }) {
   return (
-    <SlideLayout footerLeft="Framework: Castañer — four sources of diversification value" footerRight="Prof. X. Castañer · 2026">
+    <SlideLayout footerLeft="Framework: four sources of diversification value" footerRight="Prof. X. Castañer · 2026">
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">4 · Motives — GE scored against the four sources</div>
       <h2 className="text-[40px] font-light mb-8" style={{ fontFamily: "Georgia, serif" }}>
         Where the 'whole &gt; parts' value actually comes from at GE
