@@ -7,7 +7,6 @@ import SlideVRIS from "@/components/slides/SlideVRIS";
 import SlideRelatedness from "@/components/slides/SlideRelatedness";
 import SlideMotives from "@/components/slides/SlideMotives";
 import SlideSources from "@/components/slides/SlideSources";
-import SlideOI from "@/components/slides/SlideOI";
 import SlideFits from "@/components/slides/SlideFits";
 import SlideRisks from "@/components/slides/SlideRisks";
 import SlideRecs from "@/components/slides/SlideRecs";
