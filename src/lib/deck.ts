@@ -5,7 +5,6 @@ import SlideMission from "@/components/slides/SlideMission";
 import SlidePortfolio from "@/components/slides/SlidePortfolio";
 import SlideVRIS from "@/components/slides/SlideVRIS";
 import SlideRelatedness from "@/components/slides/SlideRelatedness";
-import SlideSources from "@/components/slides/SlideSources";
 import SlideMotives from "@/components/slides/SlideMotives";
 import SlideEvidence from "@/components/slides/SlideEvidence";
 import SlideOI from "@/components/slides/SlideOI";
@@ -42,8 +41,7 @@ export const SLIDES: SlideDef[] = [
 
   { id: "vris", title: "2 · Strategic Resources (VRIS)", section: "diagnosis", Component: SlideVRIS },
   { id: "relatedness", title: "3 · Fit 1 — Resource Relatedness", section: "diagnosis", Component: SlideRelatedness },
-  { id: "sources", title: "4 · Four Sources of Diversification Value (Theory)", section: "diagnosis", Component: SlideSources },
-  { id: "motives", title: "4 · Motives — GE Applied", section: "diagnosis", Component: SlideMotives },
+  { id: "motives", title: "4 · Motives for Diversification", section: "diagnosis", Component: SlideMotives },
 
   { id: "evidence", title: "4 · Evidence of Value Creation", section: "evidence", Component: SlideEvidence },
   { id: "oi", title: "5 · Organizational Infrastructure", section: "evidence", Component: SlideOI },

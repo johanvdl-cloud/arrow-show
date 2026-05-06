@@ -18,7 +18,7 @@ const sentences = [
     n: 3,
     label: "Evidence",
     text:
-      "Evidence is directional rather than a strict chop-shop: 23% TSR vs ~15% S&P over 1981–2001, 27.5% ROE in 2000, and a market premium-to-peers P/E that priced the conglomerate above the sum of its pure-play comparables.",
+      "Under Welch, GE's ROE rose from 18% to 27.5%, revenues grew almost 5×, and total shareholder return averaged 23% per year — well above the S&P 500.",
   },
   {
     n: 4,
