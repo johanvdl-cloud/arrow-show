@@ -26,21 +26,32 @@ export default function SlideMission({ active }: { active: boolean }) {
         Mission, vision & goals at the close of the Welch era
       </h2>
 
-      <div className="grid grid-cols-3 gap-12 mb-10">
-        <div>
-          <div className="text-[12px] tracking-widest uppercase text-ge-muted mb-3">Mission</div>
-          <p className="text-[22px] leading-snug">
+      <div className="grid grid-cols-3 gap-8 mb-10">
+        <div className="bg-white border border-ge-rule rounded-lg p-5">
+          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">① Mission — Why we exist</div>
+          <p className="text-[19px] leading-snug">
             Be the world's most profitable, highly diversified company — with world quality leadership in every product line.
           </p>
         </div>
-        <div>
-          <div className="text-[12px] tracking-widest uppercase text-ge-muted mb-3">Vision</div>
-          <p className="text-[18px] italic text-ge-muted">— J. Welch, c. 1983</p>
+        <div className="bg-white border border-ge-rule rounded-lg p-5">
+          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">② Vision — What we aspire to</div>
+          <p className="text-[19px] leading-snug">
+            A boundaryless, learning enterprise where every business is #1 or #2 in its market — combining the reach of a big company with the speed of a small one.
+          </p>
+          <p className="text-[13px] italic text-ge-muted mt-3">— J. Welch, c. 1983</p>
         </div>
-        <div>
-          <div className="text-[12px] tracking-widest uppercase text-ge-muted mb-3">Quantitative Ambition</div>
+        <div className="bg-white border border-ge-rule rounded-lg p-5">
+          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">③ Goals — How we measure it</div>
+          <ul className="text-[16px] leading-snug space-y-1.5 text-ge-ink/85">
+            <li>• Double-digit earnings growth, every year</li>
+            <li>• 16%+ operating margin</li>
+            <li>• 10× inventory turns</li>
+            <li>• Six Sigma quality (3.4 dpmo)</li>
+          </ul>
         </div>
       </div>
+
+      <div className="text-[12px] tracking-[0.25em] uppercase text-ge-muted mb-4">Goals — operationalised across four levers</div>
 
       <div className="space-y-5 flex-1">
         {rows.map((r, i) => (
