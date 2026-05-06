@@ -46,26 +46,54 @@ export default function SlideFits({ active }: { active: boolean }) {
         </div>
 
         {/* Fits */}
-        <div className="space-y-5">
+        <div className="space-y-4 overflow-hidden">
           {[
-            { tag: "F1 — Resource Relatedness", verdict: "MODERATE", body: "Weak on product/market, but the operating system itself is a transferable resource. Every business benefits from the same playbook even if they serve different customers." },
-            { tag: "F2 — Conditions for Exploitation", verdict: "STRONG", body: "This is where GE excels. The monthly operating cadence, the vitality curve, the boundaryless incentive model — all are precisely engineered to move capability from where it exists to where it is needed." },
-            { tag: "F3 — Conditions for Sustainability", verdict: "STRONG TODAY, FRAGILE TOMORROW", body: "Crotonville and Session C reproduce the human capital each year. But the ultimate node of the system is Welch himself — succession is Fit 3's weak point." },
+            {
+              tag: "F1 — Resource Relatedness",
+              verdict: "MODERATE",
+              body: "Weak on product/market — jet engines, light bulbs and NBC share few customers. But the operating system itself is the transferable resource: every business inherits the same playbook, the same talent pipeline, the same capital discipline.",
+              evidence: "Evidence: ~30% of Crotonville-trained leaders rotate across divisions; Six Sigma deployed in 100% of business units by 1998.",
+            },
+            {
+              tag: "F2 — Conditions for Exploitation",
+              verdict: "STRONG",
+              body: "GE's coordination machinery is precision-engineered to move capability where it's needed: monthly operating reviews, the vitality curve (top 20 / vital 70 / bottom 10), boundaryless behavior incentives, and Session C talent reviews.",
+              evidence: "Evidence: 16% CAGR in operating profit 1981–2000; #1 or #2 mandate forced active portfolio reshaping.",
+            },
+            {
+              tag: "F3 — Conditions for Sustainability",
+              verdict: "STRONG TODAY · FRAGILE TOMORROW",
+              body: "Crotonville and Session C reproduce human capital each year, and the culture is deeply institutionalised. But the keystone of the system is Welch himself — his tacit judgment, network and authority are not codified. Succession concentrates the risk.",
+              evidence: "Risk: post-Welch, the same machine under Immelt produced very different outcomes — strong evidence the CEO node is irreplaceable, not interchangeable.",
+            },
           ].map((f, i) => (
             <motion.div
               key={f.tag}
               initial={{ opacity: 0, x: 30 }}
               animate={active ? { opacity: 1, x: 0 } : {}}
-              transition={{ delay: 2.0 + i * 0.2, duration: 0.5 }}
-              className="bg-white border border-ge-rule rounded-lg p-5"
+              transition={{ delay: 1.4 + i * 0.18, duration: 0.5 }}
+              className="bg-white border border-ge-rule rounded-lg p-4"
             >
-              <div className="flex items-baseline justify-between mb-2">
-                <div className="text-[16px] font-semibold">{f.tag}</div>
-                <div className="text-[11px] tracking-widest font-bold text-ge-blue">{f.verdict}</div>
+              <div className="flex items-baseline justify-between mb-1.5">
+                <div className="text-[15px] font-semibold">{f.tag}</div>
+                <div className="text-[10px] tracking-widest font-bold text-ge-blue">{f.verdict}</div>
               </div>
-              <p className="text-[14px] leading-relaxed text-ge-ink/85">{f.body}</p>
+              <p className="text-[13px] leading-snug text-ge-ink/85 mb-1.5">{f.body}</p>
+              <p className="text-[11px] leading-snug text-ge-ink/60 italic">{f.evidence}</p>
             </motion.div>
           ))}
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={active ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 2.1, duration: 0.5 }}
+            className="border-l-2 border-ge-blue pl-4 mt-2"
+          >
+            <div className="text-[10px] tracking-[0.25em] uppercase text-ge-blue mb-1">Synthesis</div>
+            <p className="text-[13px] leading-snug text-ge-ink/90">
+              Two of three fits are strong, one is moderate — the whole <em>is</em> greater than the parts, but the system's load-bearing wall is a single CEO. Strategic resources fit the businesses; the businesses fit the org infrastructure; the org infrastructure fits Welch.
+            </p>
+          </motion.div>
         </div>
       </div>
     </SlideLayout>
