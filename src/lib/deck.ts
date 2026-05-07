@@ -10,7 +10,7 @@ import SlideEvidence from "@/components/slides/SlideEvidence";
 import SlideOI from "@/components/slides/SlideOI";
 import SlideFits from "@/components/slides/SlideFits";
 import SlideRisks from "@/components/slides/SlideRisks";
-import SlideRecs from "@/components/slides/SlideRecs";
+
 
 import SlideClosing from "@/components/slides/SlideClosing";
 
@@ -48,7 +48,7 @@ export const SLIDES: SlideDef[] = [
   { id: "fits", title: "6 & 7 · Fits 2 and 3 — Synthesis", section: "evidence", Component: SlideFits },
 
   { id: "risks", title: "Risk Register", section: "implications", Component: SlideRisks },
-  { id: "recs", title: "Recommendations to the Board", section: "implications", Component: SlideRecs },
+  
   
   { id: "closing", title: "Closing", section: "implications", Component: SlideClosing },
 ];
