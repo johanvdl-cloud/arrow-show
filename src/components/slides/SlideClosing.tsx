@@ -48,7 +48,7 @@ export default function SlideClosing({ active }: { active: boolean }) {
           transition={{ duration: 1, delay: 1.6 }}
           className="mt-20"
         >
-          <div className="text-[24px] ge-pulse text-ge-blue">Thank you — questions welcome.</div>
+          <div className="text-[24px] ge-pulse text-ge-blue">Thank you - questions welcome.</div>
           <div className="mt-4 text-[16px] opacity-70">Johan van der Linden · HEC Lausanne · Corporate Strategy, W/S 2026</div>
         </motion.div>
       </div>

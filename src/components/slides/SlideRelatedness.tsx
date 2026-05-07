@@ -34,7 +34,7 @@ const firms: Firm[] = [
   { name: "Honeywell", left: "84%", top: "78%" },
   // Bottom-left: unrelated conglomerate (low down, low up)
   { name: "Berkshire H.", left: "16%", top: "82%" },
-  { name: "GE", left: "30%", top: "72%", highlighted: true, note: "Classically here — but see process-relatedness below" },
+  { name: "GE", left: "30%", top: "72%", highlighted: true, note: "Classically here - but see process-relatedness below" },
 ];
 
 export default function SlideRelatedness({ active }: { active: boolean }) {
@@ -44,20 +44,20 @@ export default function SlideRelatedness({ active }: { active: boolean }) {
       footerRight="Prof. X. Castañer · 2026"
     >
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">
-        3 · Resource Relatedness — Fit 1
+        3 · Resource Relatedness - Fit 1
       </div>
       <h2 className="text-[36px] font-light mb-2" style={{ fontFamily: "Georgia, serif" }}>
-        Where GE sits classically — and why Welch redefines relatedness
+        Where GE sits classically - and why Welch redefines relatedness
       </h2>
       <p className="text-[14px] text-ge-muted italic mb-6">
-        Each firm is illustrative — placement is qualitative based on portfolio composition, not measured.
+        Each firm is illustrative - placement is qualitative based on portfolio composition, not measured.
       </p>
 
       <div className="grid grid-cols-[1fr_460px] gap-10 flex-1">
         {/* 2x2 chart */}
         <div className="relative bg-white border border-ge-rule rounded-lg p-6">
           <div className="text-[11px] uppercase tracking-widest text-ge-muted mb-1 text-center">
-            Downstream relatedness — customers · channels · brand
+            Downstream relatedness - customers · channels · brand
           </div>
           <div className="text-[10px] uppercase tracking-widest text-ge-muted mb-2 flex justify-between">
             <span>↑ high</span>
@@ -131,7 +131,7 @@ export default function SlideRelatedness({ active }: { active: boolean }) {
             <span>high →</span>
           </div>
           <div className="text-[11px] uppercase tracking-widest text-ge-muted text-center">
-            Upstream relatedness — technology · R&D · production
+            Upstream relatedness - technology · R&D · production
           </div>
         </div>
 
@@ -139,10 +139,10 @@ export default function SlideRelatedness({ active }: { active: boolean }) {
         <div className="space-y-4">
           <div className="p-5 rounded-lg bg-ge-navy text-ge-paper">
             <div className="text-[11px] tracking-widest uppercase opacity-70 mb-2">
-              Welch's reframing — process relatedness
+              Welch's reframing - process relatedness
             </div>
             <p className="text-[15px] leading-relaxed">
-              Classically GE looks like Berkshire — an unrelated conglomerate. But every business
+              Classically GE looks like Berkshire - an unrelated conglomerate. But every business
               shares the same management technology: Session C reviews, Work-Out, Best Practices
               transfer, Six Sigma, and the integration playbook applied to every acquisition.
             </p>
@@ -153,7 +153,7 @@ export default function SlideRelatedness({ active }: { active: boolean }) {
             </div>
             <p className="text-[14px] leading-relaxed">
               Fit 1 is weak in the conventional sense. The relevant question shifts from
-              "what do these businesses share?" to "how are they run?" — and that is answered
+              "what do these businesses share?" to "how are they run?" - and that is answered
               by Fit 2 (Business–OI alignment).
             </p>
           </div>

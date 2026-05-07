@@ -16,7 +16,7 @@ const motives: Motive[] = [
     title: "Economic synergies",
     tag: "WEAK (classical) / STRONG (process)",
     tagColor: "bg-ge-blue/80",
-    body: "Near-zero on shared customers, channels or technology. But strong on shared process capabilities — productivity fixes flowed across very different businesses, and the integration model compressed post-deal onboarding to ~100 days across the portfolio.",
+    body: "Near-zero on shared customers, channels or technology. But strong on shared process capabilities - productivity fixes flowed across very different businesses, and the integration model compressed post-deal onboarding to ~100 days across the portfolio.",
     quote: {
       text: "We quickly began to learn from each other: productivity solutions from Lighting; 'quick response' asset management from Appliances; transaction effectiveness from GE Capital; cost-reduction techniques from Aircraft Engines; and global account management from Plastics.",
       src: "Welch, GE 1995 Annual Report",
@@ -27,9 +27,9 @@ const motives: Motive[] = [
     title: "Financial synergies",
     tag: "STRONG",
     tagColor: "bg-ge-blue",
-    body: "GE Capital is an internal capital market on a vast scale — recycling industrial cash flows into leasing, reinsurance and private equity positions that stand-alone industrial firms could not access. Risk diversification across cyclical and non-cyclical units stabilises earnings.",
+    body: "GE Capital is an internal capital market on a vast scale - recycling industrial cash flows into leasing, reinsurance and private equity positions that stand-alone industrial firms could not access. Risk diversification across cyclical and non-cyclical units stabilises earnings.",
     quote: {
-      text: "We are a company intent on getting bigger, not smaller. Our only answer to the trendy question 'What do you intend to spin off?' is 'Cash — and lots of it.'",
+      text: "We are a company intent on getting bigger, not smaller. Our only answer to the trendy question 'What do you intend to spin off?' is 'Cash - and lots of it.'",
       src: "Welch, GE 1995 Annual Report",
     },
   },
@@ -43,7 +43,7 @@ const motives: Motive[] = [
   {
     roman: "IV",
     title: "Learning & adaptation",
-    tag: "VERY STRONG — THE CORE DRIVER",
+    tag: "VERY STRONG - THE CORE DRIVER",
     tagColor: "bg-ge-accent",
     body: "Crotonville as an institutional university; boundaryless behaviour rewarded in bonus formulas; A-player talent rotated across divisions; Best Practices scanned from Ford, Xerox and Toshiba and imported. The portfolio is treated explicitly as a set of learning laboratories.",
     quote: {
@@ -60,7 +60,7 @@ export default function SlideMotives({ active }: { active: boolean }) {
       footerRight="Prof. X. Castañer · 2026"
     >
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">
-        4 · Motives — GE scored against the four sources
+        4 · Motives - GE scored against the four sources
       </div>
       <h2
         className="text-[36px] font-light mb-8"
@@ -108,7 +108,7 @@ export default function SlideMotives({ active }: { active: boolean }) {
                   "{m.quote.text}"
                 </p>
                 <footer className="text-[10px] text-ge-muted mt-1.5 not-italic">
-                  — {m.quote.src}
+                  - {m.quote.src}
                 </footer>
               </motion.blockquote>
             )}

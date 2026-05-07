@@ -5,7 +5,7 @@ const sources = [
   {
     roman: "I",
     title: "Relatedness and Economic Synergies",
-    body: "Shared resources and scope economies across businesses — cost or revenue advantages from operating jointly rather than separately.",
+    body: "Shared resources and scope economies across businesses - cost or revenue advantages from operating jointly rather than separately.",
     sub: [],
   },
   {
@@ -17,13 +17,13 @@ const sources = [
   {
     roman: "III",
     title: "Multimarket Contact & Mutual Forbearance",
-    body: "When the same competitors meet across several markets, rivalry softens — each side fears retaliation in the other arenas.",
+    body: "When the same competitors meet across several markets, rivalry softens - each side fears retaliation in the other arenas.",
     sub: [],
   },
   {
     roman: "IV",
     title: "Learning and Adaptation",
-    body: "Knowledge, routines and best practices transferred across the portfolio — the corporation as a learning system.",
+    body: "Knowledge, routines and best practices transferred across the portfolio - the corporation as a learning system.",
     sub: [],
   },
 ];
@@ -31,14 +31,14 @@ const sources = [
 export default function SlideSources({ active }: { active: boolean }) {
   return (
     <SlideLayout
-      footerLeft="Source: Castañer, First Session — Master HEC Lausanne, W/S 2026 (p.9)"
+      footerLeft="Source: Castañer, First Session - Master HEC Lausanne, W/S 2026 (p.9)"
       footerRight="Prof. X. Castañer · 2026"
     >
-      <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">4 · Theory Frame — Sources of Diversification Value</div>
+      <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">4 · Theory Frame - Sources of Diversification Value</div>
       <h2 className="text-[44px] font-light mb-3" style={{ fontFamily: "Georgia, serif" }}>
         The four lenses through which any conglomerate must justify itself
       </h2>
-      <p className="text-[16px] text-ge-muted mb-8 italic">Theory only on this slide — the next slide scores GE against each lens.</p>
+      <p className="text-[16px] text-ge-muted mb-8 italic">Theory only on this slide - the next slide scores GE against each lens.</p>
 
       <div className="grid grid-cols-2 gap-6 flex-1">
         {sources.map((s, i) => (

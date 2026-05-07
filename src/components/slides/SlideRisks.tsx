@@ -40,14 +40,14 @@ const risks = [
     signal:
       "Welch acknowledges in the case that GE was 'frightened by the unfamiliarity' of the internet; dyb.com teams were launched in 1999, two years before his retirement.",
     creates:
-      "A category-defining technology shift arrives just as the founder is leaving — without a built-in playbook of the kind GE has for industrial businesses.",
+      "A category-defining technology shift arrives just as the founder is leaving - without a built-in playbook of the kind GE has for industrial businesses.",
   },
 ];
 
 export default function SlideRisks({ active }: { active: boolean }) {
   return (
     <SlideLayout
-      footerLeft="GE Case Memo · Risk register — case-grounded signals"
+      footerLeft="GE Case Memo · Risk register - case-grounded signals"
       footerRight="Prof. X. Castañer · 2026"
     >
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">
