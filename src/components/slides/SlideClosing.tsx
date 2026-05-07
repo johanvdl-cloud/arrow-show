@@ -1,7 +1,23 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import SlideLayout from "@/components/SlideLayout";
+import { exportDeckToPptx } from "@/lib/exportPptx";
 
 export default function SlideClosing({ active }: { active: boolean }) {
+  const [busy, setBusy] = useState(false);
+  const handleDownload = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (busy) return;
+    setBusy(true);
+    try {
+      await exportDeckToPptx();
+    } catch (err) {
+      console.error("PPTX export failed", err);
+    } finally {
+      setBusy(false);
+    }
+  };
   return (
     <SlideLayout variant="navy">
       <div className="absolute inset-0 pointer-events-none">
