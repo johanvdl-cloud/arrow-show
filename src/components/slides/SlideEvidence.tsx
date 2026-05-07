@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import SlideLayout from "@/components/SlideLayout";
+import ZoomableImage from "@/components/ZoomableImage";
 
 const eraBars = [
   { label: "Borch 1970", value: 12.6 },
@@ -124,7 +125,7 @@ export default function SlideEvidence({ active }: { active: boolean }) {
             <div className="text-[10px] tracking-widest uppercase text-ge-muted mb-1.5">
               Services share of revenue, 1980 → 2000 (Exhibit 9)
             </div>
-            <img
+            <ZoomableImage
               src="/exhibits/exhibit_9_services.png"
               alt="Exhibit 9: GE Product vs Services Revenues from 1980 (15% services) to 2000 forecast (75% services)"
               className="w-full rounded-md border border-ge-rule bg-white p-1.5"

@@ -15,7 +15,7 @@ interface Resource {
 const resources: Resource[] = [
   {
     name: "The Operating System",
-    why: "It is the only thing every GE business actually shares — Session C, CEC cadence, Work-Out, Best Practices, integration playbook. If anything binds the conglomerate, it is this.",
+    why: "It is the only thing every GE business actually shares - Session C, CEC cadence, Work-Out, Best Practices, integration playbook. If anything binds the conglomerate, it is this.",
     v: "High", r: "High", i: "Medium", s: "High",
   },
   {
@@ -61,14 +61,14 @@ const Cell = ({ tier, active, delay }: { tier: Tier; active: boolean; delay: num
 export default function SlideVRIS({ active }: { active: boolean }) {
   return (
     <SlideLayout
-      footerLeft="Framework: VRIS — Barney (1991)"
+      footerLeft="Framework: VRIS - Barney (1991)"
       footerRight="Prof. X. Castañer · 2026"
     >
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">
         2 · Strategic Resources
       </div>
       <h2 className="text-[36px] font-light mb-3" style={{ fontFamily: "Georgia, serif" }}>
-        Five candidate resources — and why each made the shortlist
+        Five candidate resources - and why each made the shortlist
       </h2>
       <p className="text-[14px] text-ge-muted italic mb-6 max-w-[1200px]">
         Selection criterion: a resource is a serious candidate if (a) it is corporate, not

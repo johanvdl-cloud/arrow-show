@@ -13,7 +13,7 @@ function Stat({ value, suffix, active, decimals = 0 }: { value: number; suffix: 
 
 const rows = [
   { n: 1, title: "#1 or #2 globally, or fix / sell / close", stat: { v: 16, suf: "%+", label: "operating margin" } },
-  { n: 2, title: "A boundaryless organisation — ideas flow freely across units", stat: { v: 10, suf: "×", label: "inventory turns" } },
+  { n: 2, title: "A boundaryless organisation - ideas flow freely across units", stat: { v: 10, suf: "×", label: "inventory turns" } },
   { n: 3, title: "A shift from industrial products toward high-margin services", stat: { v: 75, suf: "%", label: "revenue from services by 2000" } },
   { n: 4, title: "Quality as DNA (Six Sigma) and the internet as a lever", stat: { v: 3.4, suf: "", label: "defects per million ops (6σ)", decimals: 1 } },
 ];
@@ -28,20 +28,20 @@ export default function SlideMission({ active }: { active: boolean }) {
 
       <div className="grid grid-cols-3 gap-8 mb-10">
         <div className="bg-white border border-ge-rule rounded-lg p-5">
-          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">① Mission — Why we exist</div>
+          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">① Mission - Why we exist</div>
           <p className="text-[19px] leading-snug">
-            Be the world's most profitable, highly diversified company — with world quality leadership in every product line.
+            Be the world's most profitable, highly diversified company - with world quality leadership in every product line.
           </p>
         </div>
         <div className="bg-white border border-ge-rule rounded-lg p-5">
-          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">② Vision — What we aspire to</div>
+          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">② Vision - What we aspire to</div>
           <p className="text-[19px] leading-snug">
-            A boundaryless, learning enterprise where every business is #1 or #2 in its market — combining the reach of a big company with the speed of a small one.
+            A boundaryless, learning enterprise where every business is #1 or #2 in its market - combining the reach of a big company with the speed of a small one.
           </p>
-          <p className="text-[13px] italic text-ge-muted mt-3">— J. Welch, c. 1983</p>
+          <p className="text-[13px] italic text-ge-muted mt-3">- J. Welch, c. 1983</p>
         </div>
         <div className="bg-white border border-ge-rule rounded-lg p-5">
-          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">③ Goals — How we measure it</div>
+          <div className="text-[11px] tracking-[0.25em] uppercase text-ge-blue font-semibold mb-3">③ Goals - How we measure it</div>
           <ul className="text-[16px] leading-snug space-y-1.5 text-ge-ink/85">
             <li>• Double-digit earnings growth, every year</li>
             <li>• 16%+ operating margin</li>
@@ -51,7 +51,7 @@ export default function SlideMission({ active }: { active: boolean }) {
         </div>
       </div>
 
-      <div className="text-[12px] tracking-[0.25em] uppercase text-ge-muted mb-4">Strategic priorities — how the goals are pursued</div>
+      <div className="text-[12px] tracking-[0.25em] uppercase text-ge-muted mb-4">Strategic priorities - how the goals are pursued</div>
 
       <div className="space-y-5 flex-1">
         {rows.map((r, i) => (

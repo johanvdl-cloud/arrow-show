@@ -60,13 +60,13 @@ export default function SlidePortfolio({ active }: { active: boolean }) {
       footerRight="Prof. X. Castañer · 2026"
     >
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">
-        1 · Businesses — Portfolio & Scope
+        1 · Businesses - Portfolio & Scope
       </div>
       <h2
         className="text-[36px] font-light mb-8"
         style={{ fontFamily: "Georgia, serif" }}
       >
-        Eleven largely unrelated businesses — operated globally, held together by how they are run
+        Eleven largely unrelated businesses - operated globally, held together by how they are run
       </h2>
 
       <div className="text-[10px] tracking-widest uppercase text-ge-muted mb-2">
@@ -137,7 +137,7 @@ export default function SlidePortfolio({ active }: { active: boolean }) {
             A chop-shop valuation would treat each of these units as a standalone
             pure-play. The question is whether holding them inside one corporate entity
             generates more value than their sum would command on public markets. For GE,
-            customers, channels and technologies barely overlap — so classical scope
+            customers, channels and technologies barely overlap - so classical scope
             economies cannot be the answer.
           </p>
         </div>
@@ -164,11 +164,11 @@ export default function SlidePortfolio({ active }: { active: boolean }) {
 
         <div>
           <div className="text-[11px] tracking-widest uppercase text-ge-muted mb-2">
-            Geographic scope — Exhibit 6
+            Geographic scope - Exhibit 6
           </div>
           <motion.img
             src="/exhibits/exhibit_6_globalization.png"
-            alt="Exhibit 6: Growth through Globalization — international vs domestic sales increases, 1987–1998"
+            alt="Exhibit 6: Growth through Globalization - international vs domestic sales increases, 1987–1998"
             initial={{ opacity: 0 }}
             animate={active ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
