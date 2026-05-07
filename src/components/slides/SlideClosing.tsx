@@ -66,6 +66,17 @@ export default function SlideClosing({ active }: { active: boolean }) {
         >
           <div className="text-[24px] ge-pulse text-ge-blue">Thank you - questions welcome.</div>
           <div className="mt-4 text-[16px] opacity-70">Johan van der Linden · HEC Lausanne · Corporate Strategy, W/S 2026</div>
+
+          <button
+            type="button"
+            onClick={handleDownload}
+            onMouseDown={(e) => e.stopPropagation()}
+            disabled={busy}
+            className="mt-10 inline-flex items-center gap-2 px-5 py-3 rounded-full border border-white/30 bg-white/5 hover:bg-white/10 transition text-[14px] tracking-wider uppercase disabled:opacity-50"
+          >
+            <Download className="w-4 h-4" />
+            {busy ? "Preparing..." : "Download deck (.pptx)"}
+          </button>
         </motion.div>
       </div>
     </SlideLayout>
