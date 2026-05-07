@@ -1,7 +1,23 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import SlideLayout from "@/components/SlideLayout";
+import { exportDeckToPptx } from "@/lib/exportPptx";
 
 export default function SlideClosing({ active }: { active: boolean }) {
+  const [busy, setBusy] = useState(false);
+  const handleDownload = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (busy) return;
+    setBusy(true);
+    try {
+      await exportDeckToPptx();
+    } catch (err) {
+      console.error("PPTX export failed", err);
+    } finally {
+      setBusy(false);
+    }
+  };
   return (
     <SlideLayout variant="navy">
       <div className="absolute inset-0 pointer-events-none">
@@ -50,6 +66,17 @@ export default function SlideClosing({ active }: { active: boolean }) {
         >
           <div className="text-[24px] ge-pulse text-ge-blue">Thank you - questions welcome.</div>
           <div className="mt-4 text-[16px] opacity-70">Johan van der Linden · HEC Lausanne · Corporate Strategy, W/S 2026</div>
+
+          <button
+            type="button"
+            onClick={handleDownload}
+            onMouseDown={(e) => e.stopPropagation()}
+            disabled={busy}
+            className="mt-10 inline-flex items-center gap-2 px-5 py-3 rounded-full border border-white/30 bg-white/5 hover:bg-white/10 transition text-[14px] tracking-wider uppercase disabled:opacity-50"
+          >
+            <Download className="w-4 h-4" />
+            {busy ? "Preparing..." : "Download deck (.pptx)"}
+          </button>
         </motion.div>
       </div>
     </SlideLayout>
