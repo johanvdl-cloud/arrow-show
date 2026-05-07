@@ -6,7 +6,7 @@ interface Motive {
   title: string;
   tag: string;
   tagColor: string;
-  body: string;
+  bullets: string[];
   quote?: { text: string; src: string };
 }
 
@@ -16,7 +16,12 @@ const motives: Motive[] = [
     title: "Economic synergies",
     tag: "WEAK (classical) / STRONG (process)",
     tagColor: "bg-ge-blue/80",
-    body: "Near-zero on shared customers, channels or technology. But strong on shared process capabilities - productivity fixes flowed across very different businesses, and the integration model compressed post-deal onboarding to ~100 days across the portfolio.",
+    bullets: [
+      "Near-zero on shared customers, channels or technology",
+      "Strong on shared process capabilities across the portfolio",
+      "Productivity fixes flow between very different businesses",
+      "Integration model compresses post-deal onboarding to ~100 days",
+    ],
     quote: {
       text: "We quickly began to learn from each other: productivity solutions from Lighting; 'quick response' asset management from Appliances; transaction effectiveness from GE Capital; cost-reduction techniques from Aircraft Engines; and global account management from Plastics.",
       src: "Welch, GE 1995 Annual Report",
@@ -27,7 +32,12 @@ const motives: Motive[] = [
     title: "Financial synergies",
     tag: "STRONG",
     tagColor: "bg-ge-blue",
-    body: "GE Capital is an internal capital market on a vast scale - recycling industrial cash flows into leasing, reinsurance and private equity positions that stand-alone industrial firms could not access. Risk diversification across cyclical and non-cyclical units stabilises earnings.",
+    bullets: [
+      "GE Capital is an internal capital market at vast scale",
+      "Recycles industrial cash flows into leasing, reinsurance, private equity",
+      "Access stand-alone industrial firms cannot match",
+      "Risk diversification across cyclical and non-cyclical units stabilises earnings",
+    ],
     quote: {
       text: "We are a company intent on getting bigger, not smaller. Our only answer to the trendy question 'What do you intend to spin off?' is 'Cash - and lots of it.'",
       src: "Welch, GE 1995 Annual Report",
@@ -38,14 +48,24 @@ const motives: Motive[] = [
     title: "Multimarket contact & mutual forbearance",
     tag: "LIMITED",
     tagColor: "bg-ge-rule text-ge-ink",
-    body: "With competitors fragmented across aerospace, broadcasting, finance and healthcare, almost no rival meets GE in multiple markets. The coordination benefit is largely theoretical here.",
+    bullets: [
+      "Competitors fragmented across aerospace, broadcasting, finance, healthcare",
+      "Almost no rival meets GE in multiple markets",
+      "Coordination benefit is largely theoretical for this portfolio",
+    ],
   },
   {
     roman: "IV",
     title: "Learning & adaptation",
     tag: "VERY STRONG - THE CORE DRIVER",
     tagColor: "bg-ge-accent",
-    body: "Crotonville as an institutional university; boundaryless behaviour rewarded in bonus formulas; A-player talent rotated across divisions; Best Practices scanned from Ford, Xerox and Toshiba and imported. The portfolio is treated explicitly as a set of learning laboratories.",
+    bullets: [
+      "Crotonville functions as an institutional university",
+      "Boundaryless behaviour rewarded directly in bonus formulas",
+      "A-player talent rotated across divisions every 2-3 years",
+      "Best Practices scanned from Ford, Xerox, Toshiba and imported",
+      "Portfolio treated explicitly as a set of learning laboratories",
+    ],
     quote: {
       text: "The GE leader sees this company for what it truly is: the largest petri dish of business innovation in the world. We have roughly 350 business segments. We see them as 350 laboratories whose ideas are there to be shared, learned and spread as fast as we can.",
       src: "Welch, case text (late 1990s)",
@@ -94,9 +114,20 @@ export default function SlideMotives({ active }: { active: boolean }) {
                 {m.tag}
               </motion.div>
             </div>
-            <p className="text-[13.5px] leading-relaxed text-ge-ink/85 mb-3">
-              {m.body}
-            </p>
+            <ul className="space-y-1.5 mb-3">
+              {m.bullets.map((b, bi) => (
+                <motion.li
+                  key={bi}
+                  initial={{ opacity: 0, x: -8 }}
+                  animate={active ? { opacity: 1, x: 0 } : { opacity: 0 }}
+                  transition={{ duration: 0.35, delay: 0.4 + i * 0.18 + bi * 0.08 }}
+                  className="text-[13px] leading-snug text-ge-ink/85 flex gap-2"
+                >
+                  <span className="text-ge-blue mt-1 shrink-0">•</span>
+                  <span>{b}</span>
+                </motion.li>
+              ))}
+            </ul>
             {m.quote && (
               <motion.blockquote
                 initial={{ opacity: 0 }}
