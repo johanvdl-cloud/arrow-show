@@ -22,31 +22,41 @@ export default function SlideOI({ active }: { active: boolean }) {
         The OI is the product — every dimension engineered to move capability across units
       </h2>
 
-      <div className="grid grid-cols-5 gap-5 flex-1">
+      <div className="grid grid-cols-5 gap-4 mb-5">
         {cols.map((c, i) => (
           <motion.div
             key={c.h}
             initial={{ opacity: 0, y: 40 }}
             animate={active ? { opacity: 1, y: 0 } : { opacity: 0 }}
             transition={{ duration: 0.55, delay: 0.15 + i * 0.12 }}
-            className="bg-white border border-ge-rule rounded-lg p-5 flex flex-col"
+            className="bg-white border border-ge-rule rounded-lg p-4 flex flex-col"
           >
             <div className="text-[11px] tracking-widest uppercase text-ge-blue mb-2">{c.h}</div>
-            <div className="text-[16px] font-medium mb-4 leading-snug">{c.sub}</div>
-            <div className="h-px bg-ge-rule mb-4" />
-            <p className="text-[14px] leading-relaxed text-ge-ink/85 flex-1">{c.body}</p>
+            <div className="text-[14px] font-medium mb-3 leading-snug">{c.sub}</div>
+            <div className="h-px bg-ge-rule mb-3" />
+            <p className="text-[12.5px] leading-snug text-ge-ink/85 flex-1">{c.body}</p>
           </motion.div>
         ))}
       </div>
 
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={active ? { opacity: 1 } : {}}
-        transition={{ delay: 1.0, duration: 0.8 }}
-        className="mt-8 text-center text-[22px] italic text-ge-blue"
-        style={{ fontFamily: "Georgia, serif" }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={active ? { opacity: 1, y: 0 } : { opacity: 0 }}
+        transition={{ delay: 0.9, duration: 0.6 }}
+        className="flex-1 flex flex-col"
       >
-        The point of OI is not to run each business — it is to move capability between them.
+        <div className="text-[11px] tracking-widest uppercase text-ge-muted mb-1.5">
+          Structure visualised — Exhibit 4b: GE Organization in 1992 (post-delayering)
+        </div>
+        <img
+          src="/exhibits/exhibit_4b_org_1992.png"
+          alt="Exhibit 4b: GE organisation chart in 1992 showing Corporate Executive Office, corporate staff functions, and 13 business heads reporting directly to the CEO after sector layers were removed"
+          className="w-full rounded-md border border-ge-rule bg-white p-2"
+          style={{ maxHeight: "240px", objectFit: "contain" }}
+        />
+        <p className="text-[11px] italic text-ge-blue text-center mt-2">
+          The point of the OI is not to run each business — it is to move capability between them.
+        </p>
       </motion.div>
     </SlideLayout>
   );

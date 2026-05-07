@@ -118,16 +118,31 @@ export default function SlideEvidence({ active }: { active: boolean }) {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={active ? { opacity: 1, y: 0 } : { opacity: 0 }}
-            transition={{ duration: 0.5, delay: 1.4 }}
-            className="mt-5 p-4 rounded-lg bg-ge-paper border-l-4 border-ge-blue"
+            transition={{ duration: 0.5, delay: 1.3 }}
+            className="mt-3"
           >
-            <div className="text-[11px] tracking-widest uppercase text-ge-blue mb-1.5 font-semibold">
+            <div className="text-[10px] tracking-widest uppercase text-ge-muted mb-1.5">
+              Services share of revenue, 1980 → 2000 (Exhibit 9)
+            </div>
+            <img
+              src="/exhibits/exhibit_9_services.png"
+              alt="Exhibit 9: GE Product vs Services Revenues from 1980 (15% services) to 2000 forecast (75% services)"
+              className="w-full rounded-md border border-ge-rule bg-white p-1.5"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={active ? { opacity: 1, y: 0 } : { opacity: 0 }}
+            transition={{ duration: 0.5, delay: 1.5 }}
+            className="mt-3 p-3 rounded-lg bg-ge-paper border-l-4 border-ge-blue"
+          >
+            <div className="text-[11px] tracking-widest uppercase text-ge-blue mb-1 font-semibold">
               Reading
             </div>
-            <p className="text-[14px] leading-relaxed text-ge-ink/90">
-              The whole has clearly been worth more than the parts under Welch — every operating
-              metric improved, the workforce shrank, and shareholders earned roughly twice the
-              market return.
+            <p className="text-[13px] leading-snug text-ge-ink/90">
+              Every operating metric improved, the workforce shrank, and shareholders earned
+              roughly twice the market return.
             </p>
           </motion.div>
         </div>

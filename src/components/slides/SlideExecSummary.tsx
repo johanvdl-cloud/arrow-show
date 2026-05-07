@@ -30,7 +30,7 @@ const sentences = [
     n: 5,
     label: "Recommendation",
     text:
-      "The Board should (i) codify the operating system into teachable routines, (ii) cap GE Capital's share of group earnings, (iii) apply an OI-fit test to every business and divest where the system adds no measurable value, (iv) resource e-business at strategic-initiative scale, and (v) reconstitute Board governance for the post-Welch era.",
+      "The Board should: (i) document Welch's playbook so it survives him, (ii) cap the size of GE Capital, (iii) sell businesses where the playbook adds no value, (iv) treat digital like Six Sigma, and (v) reset Board-level governance.",
   },
 ];
 
