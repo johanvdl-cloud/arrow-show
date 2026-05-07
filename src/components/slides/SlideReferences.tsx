@@ -11,7 +11,7 @@ const groups = [
   {
     title: "Course materials",
     items: [
-      "Castañer, X. (2026). First Session — Master HEC Lausanne, Winter–Spring 2026. Slides on corporate vs. business strategy, four sources of diversification value, Collis & Montgomery's Triangle, OI dimensions.",
+      "Castañer, X. (2026). First Session - Master HEC Lausanne, Winter–Spring 2026. Slides on corporate vs. business strategy, four sources of diversification value, Collis & Montgomery's Triangle, OI dimensions.",
       "Course syllabus, Corporate Strategy, Master in Management, HEC Lausanne, Spring 2026.",
     ],
   },

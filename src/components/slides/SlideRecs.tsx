@@ -18,7 +18,7 @@ const recs = [
     n: "03",
     title: "Sell businesses where the playbook adds no value",
     when: "Within 2 years",
-    body: "Test each of the eleven businesses. If the GE operating system does not measurably improve performance there, divest — even if the business is profitable.",
+    body: "Test each of the eleven businesses. If the GE operating system does not measurably improve performance there, divest - even if the business is profitable.",
   },
   {
     n: "04",

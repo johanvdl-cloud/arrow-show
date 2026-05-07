@@ -3,10 +3,10 @@ import SlideLayout from "@/components/SlideLayout";
 
 export default function SlideFits({ active }: { active: boolean }) {
   return (
-    <SlideLayout footerLeft="Framework: Collis & Montgomery (1997) — Three Fits" footerRight="Prof. X. Castañer · 2026">
+    <SlideLayout footerLeft="Framework: Collis & Montgomery (1997) - Three Fits" footerRight="Prof. X. Castañer · 2026">
       <div className="text-[14px] tracking-[0.3em] uppercase text-ge-blue mb-4">6 & 7 · Fit Assessment</div>
       <h2 className="text-[40px] font-light mb-8" style={{ fontFamily: "Georgia, serif" }}>
-        The three fits — why the GE machine works, and what could break it
+        The three fits - why the GE machine works, and what could break it
       </h2>
 
       <div className="grid grid-cols-[520px_1fr] gap-12 flex-1">
@@ -49,22 +49,22 @@ export default function SlideFits({ active }: { active: boolean }) {
         <div className="space-y-4 overflow-hidden">
           {[
             {
-              tag: "F1 — Resource Relatedness",
+              tag: "F1 - Resource Relatedness",
               verdict: "MODERATE",
-              body: "Weak on product/market — jet engines, light bulbs and NBC share few customers. But the operating system itself is the transferable resource: every business inherits the same playbook, the same talent pipeline, the same capital discipline.",
+              body: "Weak on product/market - jet engines, light bulbs and NBC share few customers. But the operating system itself is the transferable resource: every business inherits the same playbook, the same talent pipeline, the same capital discipline.",
               evidence: "Evidence: ~30% of Crotonville-trained leaders rotate across divisions; Six Sigma deployed in 100% of business units by 1998.",
             },
             {
-              tag: "F2 — Conditions for Exploitation",
+              tag: "F2 - Conditions for Exploitation",
               verdict: "STRONG",
               body: "GE's coordination machinery is precision-engineered to move capability where it's needed: monthly operating reviews, the vitality curve (top 20 / vital 70 / bottom 10), boundaryless behavior incentives, and Session C talent reviews.",
               evidence: "Evidence: 16% CAGR in operating profit 1981–2000; #1 or #2 mandate forced active portfolio reshaping.",
             },
             {
-              tag: "F3 — Conditions for Sustainability",
+              tag: "F3 - Conditions for Sustainability",
               verdict: "STRONG TODAY · FRAGILE TOMORROW",
-              body: "Crotonville and Session C reproduce human capital each year, and the culture is deeply institutionalised. But the keystone of the system is Welch himself — his tacit judgment, network and authority are not codified. Succession concentrates the risk.",
-              evidence: "Risk: post-Welch, the same machine under Immelt produced very different outcomes — strong evidence the CEO node is irreplaceable, not interchangeable.",
+              body: "Crotonville and Session C reproduce human capital each year, and the culture is deeply institutionalised. But the keystone of the system is Welch himself - his tacit judgment, network and authority are not codified. Succession concentrates the risk.",
+              evidence: "Risk: post-Welch, the same machine under Immelt produced very different outcomes - strong evidence the CEO node is irreplaceable, not interchangeable.",
             },
           ].map((f, i) => (
             <motion.div
@@ -91,7 +91,7 @@ export default function SlideFits({ active }: { active: boolean }) {
           >
             <div className="text-[10px] tracking-[0.25em] uppercase text-ge-blue mb-1">Synthesis</div>
             <p className="text-[13px] leading-snug text-ge-ink/90">
-              Two of three fits are strong, one is moderate — the whole <em>is</em> greater than the parts, but the system's load-bearing wall is a single CEO. Strategic resources fit the businesses; the businesses fit the org infrastructure; the org infrastructure fits Welch.
+              Two of three fits are strong, one is moderate - the whole <em>is</em> greater than the parts, but the system's load-bearing wall is a single CEO. Strategic resources fit the businesses; the businesses fit the org infrastructure; the org infrastructure fits Welch.
             </p>
           </motion.div>
         </div>

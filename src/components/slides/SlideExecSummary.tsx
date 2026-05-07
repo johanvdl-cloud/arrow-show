@@ -6,25 +6,25 @@ const sentences = [
     n: 1,
     label: "Diagnosis",
     text:
-      "GE under Welch creates real diversification value, but not from classical relatedness — its twelve businesses share almost no customers, channels or technologies.",
+      "GE under Welch creates real diversification value, but not from classical relatedness - its twelve businesses share almost no customers, channels or technologies.",
   },
   {
     n: 2,
     label: "Mechanism",
     text:
-      "The synergy comes from a process-level resource — the 'GE operating system' (Session C, Work-Out, Best Practices, Six Sigma, the integration playbook) — combined with internal-capital-market scale via GE Capital.",
+      "The synergy comes from a process-level resource - the 'GE operating system' (Session C, Work-Out, Best Practices, Six Sigma, the integration playbook) - combined with internal-capital-market scale via GE Capital.",
   },
   {
     n: 3,
     label: "Evidence",
     text:
-      "Under Welch, GE's ROE rose from 18% to 27.5%, revenues grew almost 5×, and total shareholder return averaged 23% per year — well above the S&P 500.",
+      "Under Welch, GE's ROE rose from 18% to 27.5%, revenues grew almost 5×, and total shareholder return averaged 23% per year - well above the S&P 500.",
   },
   {
     n: 4,
     label: "Risk",
     text:
-      "The system's load-bearing wall is Welch himself — Session C, the cadence and the tacit judgment are not codified, GE Capital is drifting toward bank-scale, the playbook is being imitated, and GE is late to the internet.",
+      "The system's load-bearing wall is Welch himself - Session C, the cadence and the tacit judgment are not codified, GE Capital is drifting toward bank-scale, the playbook is being imitated, and GE is late to the internet.",
   },
   {
     n: 5,
@@ -47,7 +47,7 @@ export default function SlideExecSummary({ active }: { active: boolean }) {
         className="text-[44px] font-light mb-3"
         style={{ fontFamily: "Georgia, serif" }}
       >
-        The whole has been greater than the parts — but the arithmetic was done by one man
+        The whole has been greater than the parts - but the arithmetic was done by one man
       </h2>
       <p className="text-[16px] text-ge-muted italic mb-10">
         For the Board of Directors · A consultant's evaluation of GE's corporate strategy at the
